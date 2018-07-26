@@ -19,8 +19,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        refreshControl.animatedImage = GIFAnimatedImage(data: try! Data(contentsOf: Bundle.main.url(forResource: "gato_loading", withExtension: "gif")!))
-        refreshControl.contentMode = .scaleAspectFill
+        refreshControl.animatedImage = GIFAnimatedImage(data: try! Data(contentsOf: Bundle.main.url(forResource: "loading_bars", withExtension: "gif")!))
+        refreshControl.contentMode = .scaleAspectFit
         refreshControl.addTarget(self, action: #selector(ViewController.refresh), for: .valueChanged)
         tableView.addSubview(refreshControl)
     }
