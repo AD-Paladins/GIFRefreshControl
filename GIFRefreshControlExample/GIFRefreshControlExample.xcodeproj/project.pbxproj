@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,28 @@
 		CEB25E1B20F5976F00CFAB73 /* gato_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEB25E1820F5976F00CFAB73 /* gato_loading.gif */; };
 		CEB25E1C20F5976F00CFAB73 /* color_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEB25E1920F5976F00CFAB73 /* color_loading.gif */; };
 		CEB25E1D20F5976F00CFAB73 /* loading_2d.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEB25E1A20F5976F00CFAB73 /* loading_2d.gif */; };
+		DDE6A67129B0185000964054 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46798DB11B1CC4AD00510F1C /* ViewController.swift */; };
+		DDE6A67229B0185000964054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46798DAF1B1CC4AD00510F1C /* AppDelegate.swift */; };
+		DDE6A67329B0185000964054 /* GIFRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46798DD31B1CC60800510F1C /* GIFRefreshControl.swift */; };
+		DDE6A67629B0185000964054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46798DB31B1CC4AD00510F1C /* Main.storyboard */; };
+		DDE6A67729B0185000964054 /* loading_bars.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1A49C3D0210A342B00DA5ED8 /* loading_bars.gif */; };
+		DDE6A67829B0185000964054 /* gato_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEB25E1820F5976F00CFAB73 /* gato_loading.gif */; };
+		DDE6A67929B0185000964054 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46798DB81B1CC4AD00510F1C /* LaunchScreen.xib */; };
+		DDE6A67A29B0185000964054 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 46798DD11B1CC59700510F1C /* giphy.gif */; };
+		DDE6A67B29B0185000964054 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46798DB61B1CC4AD00510F1C /* Images.xcassets */; };
+		DDE6A67C29B0185000964054 /* loading_2d.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEB25E1A20F5976F00CFAB73 /* loading_2d.gif */; };
+		DDE6A67D29B0185000964054 /* color_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEB25E1920F5976F00CFAB73 /* color_loading.gif */; };
+		DDE6A68529B0185E00964054 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46798DB11B1CC4AD00510F1C /* ViewController.swift */; };
+		DDE6A68629B0185E00964054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46798DAF1B1CC4AD00510F1C /* AppDelegate.swift */; };
+		DDE6A68729B0185E00964054 /* GIFRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46798DD31B1CC60800510F1C /* GIFRefreshControl.swift */; };
+		DDE6A68A29B0185E00964054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46798DB31B1CC4AD00510F1C /* Main.storyboard */; };
+		DDE6A68B29B0185E00964054 /* loading_bars.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1A49C3D0210A342B00DA5ED8 /* loading_bars.gif */; };
+		DDE6A68C29B0185E00964054 /* gato_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEB25E1820F5976F00CFAB73 /* gato_loading.gif */; };
+		DDE6A68D29B0185E00964054 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46798DB81B1CC4AD00510F1C /* LaunchScreen.xib */; };
+		DDE6A68E29B0185E00964054 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 46798DD11B1CC59700510F1C /* giphy.gif */; };
+		DDE6A68F29B0185E00964054 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46798DB61B1CC4AD00510F1C /* Images.xcassets */; };
+		DDE6A69029B0185E00964054 /* loading_2d.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEB25E1A20F5976F00CFAB73 /* loading_2d.gif */; };
+		DDE6A69129B0185E00964054 /* color_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEB25E1920F5976F00CFAB73 /* color_loading.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +66,14 @@
 		46798DC41B1CC4AD00510F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46798DC51B1CC4AD00510F1C /* GIFRefreshControlExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFRefreshControlExampleTests.swift; sourceTree = "<group>"; };
 		46798DD11B1CC59700510F1C /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
-		46798DD31B1CC60800510F1C /* GIFRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GIFRefreshControl.swift; path = ../GIFRefreshControl.swift; sourceTree = "<group>"; };
+		46798DD31B1CC60800510F1C /* GIFRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFRefreshControl.swift; sourceTree = "<group>"; };
 		CEB25E1820F5976F00CFAB73 /* gato_loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gato_loading.gif; sourceTree = "<group>"; };
 		CEB25E1920F5976F00CFAB73 /* color_loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = color_loading.gif; sourceTree = "<group>"; };
 		CEB25E1A20F5976F00CFAB73 /* loading_2d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading_2d.gif; sourceTree = "<group>"; };
+		DDE6A68129B0185000964054 /* GIFRefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFRefreshControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE6A68229B0185000964054 /* GIFRefreshControlExample copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GIFRefreshControlExample copy-Info.plist"; path = "/Users/andrespaladines/Developer/Projects/iOS/GIFRefreshControl/GIFRefreshControlExample/GIFRefreshControlExample copy-Info.plist"; sourceTree = "<absolute>"; };
+		DDE6A69529B0185E00964054 /* GIFRefreshControlDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFRefreshControlDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE6A69629B0185E00964054 /* GIFRefreshControl copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GIFRefreshControl copy-Info.plist"; path = "/Users/andrespaladines/Developer/Projects/iOS/GIFRefreshControl/GIFRefreshControlExample/GIFRefreshControl copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,21 +91,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DDE6A67429B0185000964054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE6A68829B0185E00964054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		46798DA11B1CC4AD00510F1C = {
 			isa = PBXGroup;
 			children = (
-				1A49C3D0210A342B00DA5ED8 /* loading_bars.gif */,
-				CEB25E1920F5976F00CFAB73 /* color_loading.gif */,
-				CEB25E1820F5976F00CFAB73 /* gato_loading.gif */,
-				CEB25E1A20F5976F00CFAB73 /* loading_2d.gif */,
-				46798DD11B1CC59700510F1C /* giphy.gif */,
-				46798DD31B1CC60800510F1C /* GIFRefreshControl.swift */,
+				DDE6A69829B0232E00964054 /* Helper */,
+				DDE6A69729B0230600964054 /* Resources */,
 				46798DAC1B1CC4AD00510F1C /* GIFRefreshControlExample */,
 				46798DC21B1CC4AD00510F1C /* GIFRefreshControlExampleTests */,
 				46798DAB1B1CC4AD00510F1C /* Products */,
+				DDE6A68229B0185000964054 /* GIFRefreshControlExample copy-Info.plist */,
+				DDE6A69629B0185E00964054 /* GIFRefreshControl copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +126,8 @@
 			children = (
 				46798DAA1B1CC4AD00510F1C /* GIFRefreshControlExample.app */,
 				46798DBF1B1CC4AD00510F1C /* GIFRefreshControlExampleTests.xctest */,
+				DDE6A68129B0185000964054 /* GIFRefreshControl.app */,
+				DDE6A69529B0185E00964054 /* GIFRefreshControlDev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +170,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DDE6A69729B0230600964054 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A49C3D0210A342B00DA5ED8 /* loading_bars.gif */,
+				CEB25E1920F5976F00CFAB73 /* color_loading.gif */,
+				CEB25E1820F5976F00CFAB73 /* gato_loading.gif */,
+				CEB25E1A20F5976F00CFAB73 /* loading_2d.gif */,
+				46798DD11B1CC59700510F1C /* giphy.gif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDE6A69829B0232E00964054 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				46798DD31B1CC60800510F1C /* GIFRefreshControl.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +228,40 @@
 			productReference = 46798DBF1B1CC4AD00510F1C /* GIFRefreshControlExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DDE6A66F29B0185000964054 /* GIFRefreshControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDE6A67E29B0185000964054 /* Build configuration list for PBXNativeTarget "GIFRefreshControl" */;
+			buildPhases = (
+				DDE6A67029B0185000964054 /* Sources */,
+				DDE6A67429B0185000964054 /* Frameworks */,
+				DDE6A67529B0185000964054 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GIFRefreshControl;
+			productName = GIFRefreshControlExample;
+			productReference = DDE6A68129B0185000964054 /* GIFRefreshControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDE6A68329B0185E00964054 /* GIFRefreshControlDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDE6A69229B0185E00964054 /* Build configuration list for PBXNativeTarget "GIFRefreshControlDev" */;
+			buildPhases = (
+				DDE6A68429B0185E00964054 /* Sources */,
+				DDE6A68829B0185E00964054 /* Frameworks */,
+				DDE6A68929B0185E00964054 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GIFRefreshControlDev;
+			productName = GIFRefreshControlExample;
+			productReference = DDE6A69529B0185E00964054 /* GIFRefreshControlDev.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,7 +275,6 @@
 				TargetAttributes = {
 					46798DA91B1CC4AD00510F1C = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 3PLD5VHEP6;
 						LastSwiftMigration = 0810;
 					};
 					46798DBE1B1CC4AD00510F1C = {
@@ -189,13 +282,20 @@
 						LastSwiftMigration = 0810;
 						TestTargetID = 46798DA91B1CC4AD00510F1C;
 					};
+					DDE6A66F29B0185000964054 = {
+						DevelopmentTeam = 24YV2FQ3V6;
+					};
+					DDE6A68329B0185E00964054 = {
+						DevelopmentTeam = 24YV2FQ3V6;
+					};
 				};
 			};
 			buildConfigurationList = 46798DA51B1CC4AD00510F1C /* Build configuration list for PBXProject "GIFRefreshControlExample" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -204,6 +304,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				DDE6A66F29B0185000964054 /* GIFRefreshControl */,
+				DDE6A68329B0185E00964054 /* GIFRefreshControlDev */,
 				46798DA91B1CC4AD00510F1C /* GIFRefreshControlExample */,
 				46798DBE1B1CC4AD00510F1C /* GIFRefreshControlExampleTests */,
 			);
@@ -233,6 +335,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DDE6A67529B0185000964054 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE6A67629B0185000964054 /* Main.storyboard in Resources */,
+				DDE6A67729B0185000964054 /* loading_bars.gif in Resources */,
+				DDE6A67829B0185000964054 /* gato_loading.gif in Resources */,
+				DDE6A67929B0185000964054 /* LaunchScreen.xib in Resources */,
+				DDE6A67A29B0185000964054 /* giphy.gif in Resources */,
+				DDE6A67B29B0185000964054 /* Images.xcassets in Resources */,
+				DDE6A67C29B0185000964054 /* loading_2d.gif in Resources */,
+				DDE6A67D29B0185000964054 /* color_loading.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE6A68929B0185E00964054 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE6A68A29B0185E00964054 /* Main.storyboard in Resources */,
+				DDE6A68B29B0185E00964054 /* loading_bars.gif in Resources */,
+				DDE6A68C29B0185E00964054 /* gato_loading.gif in Resources */,
+				DDE6A68D29B0185E00964054 /* LaunchScreen.xib in Resources */,
+				DDE6A68E29B0185E00964054 /* giphy.gif in Resources */,
+				DDE6A68F29B0185E00964054 /* Images.xcassets in Resources */,
+				DDE6A69029B0185E00964054 /* loading_2d.gif in Resources */,
+				DDE6A69129B0185E00964054 /* color_loading.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -251,6 +383,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				46798DC61B1CC4AD00510F1C /* GIFRefreshControlExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE6A67029B0185000964054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE6A67129B0185000964054 /* ViewController.swift in Sources */,
+				DDE6A67229B0185000964054 /* AppDelegate.swift in Sources */,
+				DDE6A67329B0185000964054 /* GIFRefreshControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE6A68429B0185E00964054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE6A68529B0185E00964054 /* ViewController.swift in Sources */,
+				DDE6A68629B0185E00964054 /* AppDelegate.swift in Sources */,
+				DDE6A68729B0185E00964054 /* GIFRefreshControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +478,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -363,6 +516,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -372,12 +526,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3PLD5VHEP6;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24YV2FQ3V6;
 				INFOPLIST_FILE = GIFRefreshControlExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = be.delannoyk.GIFRefreshingPala;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = goit.apaladines.GIFRefreshingPala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -385,12 +545,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3PLD5VHEP6;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24YV2FQ3V6;
 				INFOPLIST_FILE = GIFRefreshControlExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = be.delannoyk.GIFRefreshingPala;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = goit.apaladines.GIFRefreshingPala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -398,15 +564,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 24YV2FQ3V6;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = GIFRefreshControlExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "be.delannoyk.$(PRODUCT_NAME:rfc1034identifier)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = goit.apaladines.GIFRefreshingPalaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GIFRefreshControlExample.app/GIFRefreshControlExample";
 			};
 			name = Debug;
@@ -415,12 +586,81 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 24YV2FQ3V6;
 				INFOPLIST_FILE = GIFRefreshControlExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "be.delannoyk.$(PRODUCT_NAME:rfc1034identifier)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = goit.apaladines.GIFRefreshingPalaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GIFRefreshControlExample.app/GIFRefreshControlExample";
+			};
+			name = Release;
+		};
+		DDE6A67F29B0185000964054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 24YV2FQ3V6;
+				INFOPLIST_FILE = GIFRefreshControlExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = goit.apaladines.GIFRefreshingPala;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DDE6A68029B0185000964054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 24YV2FQ3V6;
+				INFOPLIST_FILE = GIFRefreshControlExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = goit.apaladines.GIFRefreshingPala;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DDE6A69329B0185E00964054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 24YV2FQ3V6;
+				INFOPLIST_FILE = GIFRefreshControlExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = goit.apaladines.GIFRefreshingPala;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DDE6A69429B0185E00964054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 24YV2FQ3V6;
+				INFOPLIST_FILE = GIFRefreshControlExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = goit.apaladines.GIFRefreshingPala;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -450,6 +690,24 @@
 			buildConfigurations = (
 				46798DCD1B1CC4AD00510F1C /* Debug */,
 				46798DCE1B1CC4AD00510F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE6A67E29B0185000964054 /* Build configuration list for PBXNativeTarget "GIFRefreshControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE6A67F29B0185000964054 /* Debug */,
+				DDE6A68029B0185000964054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE6A69229B0185E00964054 /* Build configuration list for PBXNativeTarget "GIFRefreshControlDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE6A69329B0185E00964054 /* Debug */,
+				DDE6A69429B0185E00964054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

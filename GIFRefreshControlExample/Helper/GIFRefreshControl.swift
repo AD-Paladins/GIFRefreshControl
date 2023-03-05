@@ -99,7 +99,7 @@ private class GIFAnimatedImageView: UIImageView {
 
     lazy var displayLink: CADisplayLink = {
         let dl = CADisplayLink(target: self, selector: #selector(GIFAnimatedImageView.refreshDisplay))
-        dl.add(to: .main, forMode: .commonModes)
+        dl.add(to: .main, forMode: RunLoop.Mode.common)
         dl.isPaused = true
         return dl
     }()
@@ -222,7 +222,7 @@ public class GIFRefreshControl: UIControl {
         }
     }
 
-    public override var contentMode: UIViewContentMode {
+    public override var contentMode: UIView.ContentMode {
         get {
             return imageView.contentMode
         }
@@ -271,24 +271,24 @@ public class GIFRefreshControl: UIControl {
         if let superview = superview as? UIScrollView, refreshing {
             forbidsOffsetChanges = false
             refreshing = false
-
+            
             UIView.animate(withDuration: animationDuration,
-                delay: 0,
-                usingSpringWithDamping: animationDamping,
-                initialSpringVelocity: animationVelocity,
-                options: UIViewAnimationOptions.curveLinear,
-                animations: { () -> Void in
-
-                    if let contentInset = self.contentInset {
-                        superview.contentInset = contentInset
-                        self.contentInset = nil
-                    }
-
-                }) { (finished) -> Void in
-
-                    self.imageView.stopAnimating()
-                    self.imageView.index = 0
-
+                           delay: 0,
+                           usingSpringWithDamping: animationDamping,
+                           initialSpringVelocity: animationVelocity,
+                           options: UIView.AnimationOptions.curveLinear,
+                           animations: { () -> Void in
+                
+                if let contentInset = self.contentInset {
+                    superview.contentInset = contentInset
+                    self.contentInset = nil
+                }
+                
+            }) { (finished) -> Void in
+                
+                self.imageView.stopAnimating()
+                self.imageView.index = 0
+                
             }
         }
     }
@@ -340,7 +340,7 @@ public class GIFRefreshControl: UIControl {
             //We cannot do this in the previous if/else because then some frames
             //might not be drawn
             if animateOnScroll && !refreshing && superview.contentOffset.y + topInset < 0 {
-                let percentage = min(1, fabs(height) / expandedHeight)
+                let percentage = min(1, abs(height) / expandedHeight)
                 let count = CGFloat(imageView.animatedImage?.frameCount ?? 1) - 1
                 let index = UInt(count * percentage)
                 imageView.index = index
