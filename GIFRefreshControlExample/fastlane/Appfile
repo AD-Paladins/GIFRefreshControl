@@ -1,0 +1,8 @@
+app_identifier("goit.apaladines.GIFRefreshingPala") # The bundle identifier of your app
+apple_id("andrespaladines@hotmail.com") # Your Apple Developer Portal username
+
+itc_team_id("120256879") # App Store Connect Team ID
+team_id("24YV2FQ3V6") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

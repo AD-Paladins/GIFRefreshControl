@@ -1,0 +1,7 @@
+platform :ios do
+  desc "Test the application" 
+  lane :test_app do
+    # run tests
+    scan
+  end
+end

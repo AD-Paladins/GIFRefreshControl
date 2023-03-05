@@ -1,0 +1,28 @@
+# For more information about this configuration visit
+# https://docs.fastlane.tools/actions/gym/#gymfile
+
+# sdk("iphoneos9.0")
+
+####Debug debug - for debugging
+####Ad-Hoc ad-hoc - for ad-hoc builds that are signed with an ad- hoc provisioning profile
+####Release release - a configuration for your release build
+
+# If you use Cocoapods you surely have a workspace 
+# workspace("GIFRefreshControlExample.xcworkspace")
+# Your default project scheme
+scheme("GIFRefreshControlExample")
+
+# The project default configuration to use
+configuration("Release")
+
+# If it should clean the project before building
+clean(true)
+
+# The default export method
+export_method("release")
+
+# The path to your build folder
+build_path("./build")
+
+# The path to your output folder
+output_directory("./output")
