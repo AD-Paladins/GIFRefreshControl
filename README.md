@@ -1,66 +1,59 @@
-# GIFRefreshControl
+## [fastlane match](https://docs.fastlane.tools/actions/match/)
 
-[![Build Status](https://travis-ci.org/delannoyk/GIFRefreshControl.svg)](https://travis-ci.org/delannoyk/GIFRefreshControl)
-![Cocoapods Compatible](https://img.shields.io/cocoapods/v/GIFRefreshControl.svg)
-![Platform iOS](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
-[![Contact](https://img.shields.io/badge/contact-%40kdelannoy-blue.svg)](https://twitter.com/kdelannoy)
+This repository contains all your certificates and provisioning profiles needed to build and sign your applications. They are encrypted using OpenSSL via a passphrase.
 
-GIFRefreshControl is a pull to refresh that supports GIF images as track animations.
+**Important:** Make sure this repository is set to private and only your team members have access to this repo.
 
-![Example 1](example.gif)
-![Example 2](example2.gif)
-![Example 3](example3.gif)
+Do not modify this file, as it gets overwritten every time you run _match_.
 
-## Installation
+### Installation
 
-You have multiple choices here:
-* Copy `GIFRefreshControl.swift` in your project.
-* Adding it in your Podfile `pod 'GIFRefreshControl'`
+Make sure you have the latest version of the Xcode command line tools installed:
 
-## Usage
-```swift
-let url = Bundle.main.url(forResource: "giphy", withExtension: "gif")
-let data = Data(contentsOf: url!)
-
-let refreshControl = GIFRefreshControl()
-refreshControl.animatedImage = GIFAnimatedImage(data: data!)
-refreshControl.contentMode = .scaleAspectFill
-refreshControl.addTarget(self, action: #selector(ViewController.refresh(_:)), for: .valueChanged)
-tableView.addSubview(refreshControl)
+```
+xcode-select --install
 ```
 
-### Memory consideration
+Install _fastlane_ using
 
-Right now, the default implementation of `GIFAnimatedImage` is not optimized for memory. That's why you are able to use your custom implementation by using `AnimatedImage` (like [`FLAnimatedImage`](https://github.com/Flipboard/FLAnimatedImage)). `AnimatedImage` is a protocol that describe what is needed to use it in the refresh control.
+```
+[sudo] gem install fastlane -NV
+```
 
-## Contributing
+or alternatively using `brew install fastlane`
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+### Usage
 
-## License
+Navigate to your project folder and run
 
-The MIT License (MIT)
+```
+fastlane match appstore
+```
 
-Copyright (c) 2015 Kevin Delannoy
+```
+fastlane match adhoc
+```
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+```
+fastlane match development
+```
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+```
+fastlane match enterprise
+```
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+For more information open [fastlane match git repo](https://docs.fastlane.tools/actions/match/)
+
+### Content
+
+#### certs
+
+This directory contains all your certificates with their private keys
+
+#### profiles
+
+This directory contains all provisioning profiles
+
+---
+
+For more information open [fastlane match git repo](https://docs.fastlane.tools/actions/match/)
